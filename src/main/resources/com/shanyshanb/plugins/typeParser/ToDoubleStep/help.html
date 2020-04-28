@@ -1,0 +1,18 @@
+<p>
+    Parse String to Double.
+</p>
+<strong>Fields:</strong>
+<ul>
+    <li>
+        <code>string</code>:
+        The String to parse.
+    </li>
+</ul>
+<p>
+    <strong>Example:</strong><br/>
+    <code><pre>
+env.NUMBER = 2.1  // env variables are String type
+def number = toDouble string: env.NUMBER
+println(number + 1) // now it's ok to add another number
+	</pre></code>
+</p>

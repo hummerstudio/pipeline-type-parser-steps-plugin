@@ -1,0 +1,27 @@
+<p>
+    Parse Groovy Map to JSON String.
+</p>
+<strong>Fields:</strong>
+<ul>
+    <li>
+        <code>map</code>:
+        The object to parse. Can either be a
+        <a href="http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json/JSON.html">JSON</a>
+        instance or Groovy Map/List instance. Both are supported.
+    </li>
+    <li>
+        <code>pretty</code> <i>(optional)</i>:
+        Prettify the output with this number of spaces added to each level of indentation.
+    </li>
+</ul>
+<p>
+    <strong>Example:</strong><br/>
+    <code><pre>
+def example_map = [a:'a_value', b:'b_value']
+def json = toJson map: example_map
+// or pretty print it, indented with a configurable number of spaces
+def json = toJson map: example_map, pretty: 4
+//Do some manipulation
+println(json)
+	</pre></code>
+</p>
